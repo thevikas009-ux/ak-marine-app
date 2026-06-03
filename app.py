@@ -252,21 +252,7 @@ html_content = r"""
 
 }
 
-<section id="locations">
-  <div class="section-inner">
 
-    <p class="section-label">Work Locations</p>
-
-    <h2 class="section-title">
-      Locations Where We Successfully Completed Projects
-    </h2>
-
-    <p style="margin-top:20px;line-height:2;">
-      Uran • Gorai • Ratnagiri • Porbandar • Mangrul • Alibaug
-    </p>
-
-  </div>
-</section>
 /* CONTACT */
   #contact { background: var(--white); }
   .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; margin-top: 3rem; align-items: start; }
@@ -303,7 +289,21 @@ html_content = r"""
 </style>
 </head>
 <body>
+<section id="locations">
+  <div class="section-inner">
 
+    <p class="section-label">Work Locations</p>
+
+    <h2 class="section-title">
+      Locations Where We Successfully Completed Projects
+    </h2>
+
+    <p style="margin-top:20px;line-height:2;">
+      Uran • Gorai • Ratnagiri • Porbandar • Mangrul • Alibaug
+    </p>
+
+  </div>
+</section>
 <nav>
   <div class="nav-brand">A K Mehra</div>
   <ul class="nav-links">
