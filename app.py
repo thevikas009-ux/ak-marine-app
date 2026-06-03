@@ -55,7 +55,7 @@ html_content = r"""
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 30px 5vw 60px;
+    padding: 70px 5vw 60px;
     position: relative;
     overflow: hidden;
 }
