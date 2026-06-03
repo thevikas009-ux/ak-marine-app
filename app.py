@@ -82,7 +82,7 @@ html_content = r"""
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
-    margin-top: -60px;
+    margin-top: -80px;
 }
 .hero-tag { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--sky); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.75rem; }
   .hero-tag::before { content: ''; display: inline-block; width: 2rem; height: 1px; background: var(--sky); }
