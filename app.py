@@ -28,7 +28,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 3. Aapka Pura Asli HTML Code (Saare Features Ke Sath)
-html_content = r"""
+html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
