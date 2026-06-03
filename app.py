@@ -17,7 +17,7 @@ st.markdown("""
             display: block;
         }
     </style>
-""", unsafe_allow_stdio=True)
+""", unsafe_allow_html=True)
 
 # 2. Updated HTML Content (CSS Fixes Included)
 html_content = r"""
