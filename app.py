@@ -38,14 +38,7 @@ html_content = r"""
   }
 
   /* NAV */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: rgba(13,38,64,0.97);
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0 5vw; height: 64px;
-    border-bottom: 1px solid rgba(91,164,207,0.25);
-  }
-  .nav-brand { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--sky-light); letter-spacing: 0.04em; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(13,38,64,0.97); display: flex; align-items: center; justify-content: space-between; padding: 0 5vw; height: 64px; border-bottom: 1px solid rgba(91,164,207,0.25); }  .nav-brand { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--sky-light); letter-spacing: 0.04em; }
   .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
   .nav-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
   .nav-links a:hover { color: var(--sky-light); }
