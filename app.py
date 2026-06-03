@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 st.set_page_config(page_title="AK Mehra – Fiberglass & Boat Specialists", layout="wide")
 
 # Aapka share kiya hua HTML, CSS aur JS code ek sath
-html_content = """
+html_content = r"""
 <!DOCTYPE html>
 <html lang="en">
 <head>
