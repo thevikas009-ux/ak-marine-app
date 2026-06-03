@@ -28,7 +28,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 3. Aapka Pura Asli HTML Code (Saare Features Ke Sath)
-html_content = """
+html_content = r"""
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -168,4 +168,274 @@ html_content = """
 
 <nav>
   <div class="nav-brand">A K Mehra</div>
-  <ul class="nav-links
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#admin-upload" id="nav-upload-link" style="display:none; color: var(--gold);">Upload (Admin)</a></li>
+    <li><button id="admin-login-btn" style="background:none; border:1px solid var(--gold); color:var(--gold); padding:5px 12px; cursor:pointer; font-family:inherit; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em;">Admin Login</button></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <p class="hero-tag">Est. Since 1990 · Bhayandar, Maharashtra</p>
+      <h1>Masters of<br><em>Fiberglass</em><br>& the Sea</h1>
+      <p class="hero-desc">AK Mehra brings over 35 years of hands-on expertise in fishing boat manufacturing, repair, and advanced fiberglass work.</p>
+      <a href="#contact" class="hero-cta">Get in Touch</a>
+      <div class="hero-stats">
+        <div class="stat-item"><div class="stat-num">35+</div><div class="stat-label">Years Experience</div></div>
+        <div class="stat-item"><div class="stat-num">06</div><div class="stat-label">Core Services</div></div>
+        <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Quality</div></div>
+        <div class="stat-item"><div class="stat-num">∞</div><div class="stat-label">Satisfied Clients</div></div>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-frame">
+        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=500" alt="Marine Boat Work">
+      </div>
+      <div class="hero-photo-name"><p>A.K. Mehra</p><span>Founder & Chief Builder</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="height: 100%; width: 100%; fill: #f5f0e8;">
+    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V120H321.39Z"></path>
+  </svg>
+</div>
+
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div>
+        <p class="section-label">Legacy of Trust</p>
+        <h2 class="section-title">35+ Years of Maritime Excellence</h2>
+        <div class="experience-badge">
+          <div class="num">35</div>
+          <div class="text"><strong>Years of Active Service</strong>Crafting resilient vessels for Indian waters.</div>
+        </div>
+      </div>
+      <div class="about-body">
+        <p>Based in the coastal belt of Bhayandar, Maharashtra, AK Mehra has been the backbone of local fishermen since 1990. We specialize in high-end fiberglass reinforcement and structural restorations.</p>
+        <div class="about-highlight"><p>"A boat is more than a vessel—it’s a livelihood. We build it to survive the sea."</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-inner">
+    <p class="section-label">What We Do</p>
+    <h2 class="section-title">Our Marine & Fiberglass Services</h2>
+    <div class="services-grid">
+      <div class="service-card"><h3>01</h3><h4>New Boat Manufacturing</h4><p>Custom fiberglass fishing boats built with safety and performance.</p></div>
+      <div class="service-card"><h3>02</h3><h4>Boat Repairing & Maintenance</h4><p>Complete repair, servicing, and structural restoration.</p></div>
+      <div class="service-card"><h3>03</h3><h4>Gelcoat & Finishing</h4><p>Professional gelcoat application for long-lasting protection.</p></div>
+      <div class="service-card"><h3>04</h3><h4>Fish Storage Tank</h4><p>Durable fiberglass fish storage tanks designed for marine use.</p></div>
+      <div class="service-card"><h3>05</h3><h4>Reinforcement & Modification</h4><p>Structural strengthening, hull modifications, and upgrades.</p></div>
+      <div class="service-card"><h3>06</h3><h4>Boat Ice Box Fitting</h4><p>Custom ice box fabrication and utility cabin installation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="section-inner">
+    <p class="section-label" style="color: var(--sky);">Our Portfolio</p>
+    <h2 class="section-title">Project Gallery</h2>
+    <p class="gallery-intro">Explore our latest fiberglass modifications and heavy repair projects running actively across the coast.</p>
+    
+    <div class="gallery-container">
+      <div class="gallery-grid" id="dynamic-gallery">
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 2rem;">
+      <button id="load-more-btn" class="hero-cta" style="cursor: pointer;">Load More Photos</button>
+    </div>
+  </div>
+</section>
+
+<section id="admin-upload" style="display: none; background: var(--white); border-top: 2px solid var(--navy);">
+  <div class="section-inner" style="max-width: 600px;">
+    <p class="section-label">Admin Control Panel</p>
+    <h2 class="section-title">Upload New Photos</h2>
+    <div style="background: var(--cream); padding: 2rem; border-radius: 4px; margin-top: 1rem;">
+      <div style="margin-bottom: 1.5rem;">
+        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Select Images:</label>
+        <input type="file" id="admin-file-input" accept="image/*" multiple style="width:100%; padding:0.5rem;">
+      </div>
+      <div style="margin-bottom: 1.5rem;">
+        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Location Name / Title:</label>
+        <input type="text" id="admin-img-location" placeholder="e.g. Uran, Gorai, Alibaug" style="width:100%; padding:0.5rem;">
+      </div>
+      <div style="margin-bottom: 1.5rem;">
+        <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Layout Style:</label>
+        <select id="admin-img-style" style="width: 100%; padding: 0.5rem;">
+          <option value="normal">Normal</option>
+          <option value="wide">Wide (Takes 2 Columns)</option>
+          <option value="tall">Tall (Takes 2 Rows)</option>
+        </select>
+      </div>
+      <button id="upload-submit-btn" class="hero-cta" style="background: var(--navy); color: #fff; width: 100%; border: none; padding: 1rem;">Upload to Live Gallery</button>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-label">Connect with Us</p>
+    <h2 class="section-title">Let's Discuss Your Vessel</h2>
+    
+    <div class="contact-grid">
+      <div>
+        <div class="contact-info-row">
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+          <div><h4>Workshop Location</h4><p>Bhayandar West, Near Uttan Marine Area / Rai Village, Thane District, Maharashtra - 401101</p></div>
+        </div>
+        <div class="contact-info-row">
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+          <div><h4>Call / WhatsApp</h4><p><a href="tel:+918655411098">+91 86554 11098</a></p></div>
+        </div>
+        <div class="contact-note"><p><strong>Interactive Map Pointer:</strong> Click on the blue pins in the marine map to see coastal cities where AK Mehra successfully completed flagship projects!</p></div>
+      </div>
+
+      <div>
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">AK Mehra</div>
+  <p>© 2026 AK Mehra Fiberglass & Boat Specialists. All Rights Reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+  // 1. DYNAMIC & INTERACTIVE GEOMAP ENGINE (With project locations pinned)
+  // Bhayandar coordinates as main view point
+  const map = L.map('map').setView([19.3090, 72.7850], 7); 
+  
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Array locations where project work is completed successfully
+  const workLocations = [
+    { name: "Bhayandar Workshop (HQ)", coords: [19.3090, 72.7850], desc: "Main Boat Manufacturing Hub" },
+    { name: "Uran", coords: [18.8770, 72.9430], desc: "Fiberglass Cabins fitted successfully" },
+    { name: "Gorai", coords: [19.2372, 72.7811], desc: "Heavy Trawler Hull Overhaul & Repair" },
+    { name: "Ratnagiri", coords: [16.9902, 73.3120], desc: "Ice-box Insulation Fabrication Setup" },
+    { name: "Alibaug", coords: [18.6585, 72.8777], desc: "Gelcoat Seawater Protection Coating Project" },
+    { name: "Mangrul", coords: [15.8640, 73.6520], desc: "Structural Marine Reinforcements" },
+    { name: "Porbandar", coords: [21.6417, 69.6093], desc: "Large Scale Fishing Vessel Manufacturing Support" }
+  ];
+
+  // Pinned location automation marker generation
+  workLocations.forEach(loc => {
+    L.marker(loc.coords).addTo(map)
+     .bindPopup(`<b>${loc.name}</b><br>${loc.desc}`);
+  });
+
+  // 2. LIVE SEAMLESS MOVING AUTOMATED GALLERY LOGIC
+  const initialPhotos = [
+    { src: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600", loc: "Uran Project" },
+    { src: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=600", loc: "Gorai Coast" },
+    { src: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600", loc: "Ratnagiri Heavy Repair" },
+    { src: "https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?w=600", loc: "Porbandar Vessel" },
+    { src: "https://images.unsplash.com/photo-1505242844900-33230a1bf64c?w=600", loc: "Alibaug Gelcoat Finish" },
+    { src: "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=600", loc: "Mangrul Dockyard" }
+  ];
+
+  let adminPhotos = JSON.parse(localStorage.getItem('ak_mehra_gallery_photos')) || [];
+  let combinedPhotos = [...adminPhotos, ...initialPhotos];
+
+  const galleryGrid = document.getElementById('dynamic-gallery');
+
+  function renderMovingGallery() {
+    galleryGrid.innerHTML = '';
+    // Double array loop for infinite automated slider illusion
+    let renderList = [...combinedPhotos, ...combinedPhotos]; 
+    
+    renderList.forEach(photo => {
+      const item = document.createElement('div');
+      item.className = 'gallery-item';
+      item.setAttribute('data-location', photo.loc || 'AK Mehra Project');
+      
+      const img = document.createElement('img');
+      img.src = photo.src;
+      img.loading = 'lazy';
+      
+      item.appendChild(img);
+      galleryGrid.appendChild(item);
+    });
+  }
+
+  // 3. ADMIN PANEL SECURITY SYSTEM
+  const adminLoginBtn = document.getElementById('admin-login-btn');
+  const adminUploadSection = document.getElementById('admin-upload');
+  const navUploadLink = document.getElementById('nav-upload-link');
+
+  adminLoginBtn.addEventListener('click', () => {
+    if (adminLoginBtn.innerText === "LOGOUT") {
+      adminUploadSection.style.display = "none";
+      navUploadLink.style.display = "none";
+      adminLoginBtn.innerText = "ADMIN LOGIN";
+      return;
+    }
+
+    const pass = prompt("Enter Admin Secret Key Password:");
+    if (pass === "mehra123") {
+      alert("Welcome Commander! Upload modules are now online.");
+      adminUploadSection.style.display = "block";
+      navUploadLink.style.display = "block";
+      adminLoginBtn.innerText = "LOGOUT";
+    } else if (pass !== null) {
+      alert("Unauthorized Access Denied.");
+    }
+  });
+
+  // 4. ADMIN LIVE IMAGE UPLOAD ENGINE
+  document.getElementById('upload-submit-btn').addEventListener('click', () => {
+    const fileIn = document.getElementById('admin-file-input');
+    const locIn = document.getElementById('admin-img-location').value || 'Coastal Project';
+
+    if (fileIn.files.length === 0) {
+      alert("Please select at least one marine image asset.");
+      return;
+    }
+
+    let loaded = 0;
+    Array.from(fileIn.files).forEach(file => {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        adminPhotos.unshift({ src: e.target.result, loc: locIn });
+        localStorage.setItem('ak_mehra_gallery_photos', JSON.stringify(adminPhotos));
+        
+        loaded++;
+        if (loaded === fileIn.files.length) {
+          combinedPhotos = [...adminPhotos, ...initialPhotos];
+          renderMovingGallery();
+          alert("Assets successfully updated on live stack!");
+          fileIn.value = '';
+        }
+      }
+      reader.readAsDataURL(file);
+    });
+  });
+
+  // Initial Load Trigger
+  renderMovingGallery();
+</script>
+
+</body>
+</html>
+"""
+
+# 4. Pure Frame Height Integration (Auto-Scroll system Enabled)
+components.html(html_content, height=4100, scrolling=True)
