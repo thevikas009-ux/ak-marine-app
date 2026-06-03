@@ -528,7 +528,21 @@ href="https://unpkg.com/leaflet/dist/leaflet.css"/>
     </div>
   </div>
 </section>
+<section id="locations">
+  <div class="section-inner">
 
+    <p class="section-label">Work Locations</p>
+
+    <h2 class="section-title">
+      Locations Where We Successfully Completed Projects
+    </h2>
+
+    <p style="margin-top:20px;line-height:2;">
+      Uran • Gorai • Ratnagiri • Porbandar • Mangrul • Alibaug
+    </p>
+
+  </div>
+</section>
 <!-- FOOTER -->
 <footer>
   <div class="footer-brand">AK Mehra</div>
@@ -820,21 +834,7 @@ href="https://unpkg.com/leaflet/dist/leaflet.css"/>
   // Load first phase on page render
   renderGallery();
 </script>
-<section id="locations">
-  <div class="section-inner">
 
-    <p class="section-label">Work Locations</p>
-
-    <h2 class="section-title">
-      Locations Where We Successfully Completed Projects
-    </h2>
-
-    <p style="margin-top:20px;line-height:2;">
-      Uran • Gorai • Ratnagiri • Porbandar • Mangrul • Alibaug
-    </p>
-
-  </div>
-</section>
 
 <!-- GALLERY -->
 <section id="gallery">
