@@ -55,7 +55,7 @@ html_content = r"""
     min-height: 100vh;
     background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 55%, var(--blue) 100%);
     display: flex; align-items: center;
-    padding: 80px 5vw 60px;
+    padding: 20px 5vw 60px;
     position: relative; overflow: hidden;
   }
   .hero::before {
