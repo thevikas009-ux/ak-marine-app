@@ -913,4 +913,8 @@ href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 """
 
 # Is code ki madad se aapka HTML pure webpage par automatic render (bann) jayega
-components.html(html_content, height=4200, scrolling=True)
+components.html(
+    html_content,
+    height=10000,
+    scrolling=False
+)
