@@ -299,6 +299,15 @@ html_content = r"""
           <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
           <div><h4>Call / WhatsApp</h4><p><a href="tel:+918655411098">+91 86554 11098</a></p></div>
         </div>
+        <div>
+    <h4>Call / E-mail</h4>
+    <p>
+      <a href="mailto:arun.mehra401105@gmail.com">
+        arun.mehra401105@gmail.com
+      </a>
+    </p>
+  </div>
+</div>
         <div class="contact-note"><p><strong>Interactive Map Pointer:</strong> Click on the blue pins in the marine map to see coastal cities where AK Mehra successfully completed flagship projects!</p></div>
       </div>
 
