@@ -1,10 +1,11 @@
+# Updated copy generated for user
 import streamlit as st
 import streamlit.components.v1 as components
 import base64
 import os
 
 # 1. Page Configuration
-st.set_page_config(page_title="AK Mehra – Fiberglass & Boat Specialists", layout="wide")
+st.set_page_config(page_title="A.K. Mehra – Fiberglass & Boat Specialists", layout="wide")
 
 # Function to load local image and convert to base64
 def get_base64_image(image_path):
@@ -159,6 +160,15 @@ html_content = f"""
     <div style="background: #fff; padding: 30px; border-radius: 12px; border-top: 4px solid var(--navy);"><h3>01</h3><h4>Boat Manufacturing</h4><p>Custom fiberglass vessels built with high seawater resistance.</p></div>
     <div style="background: #fff; padding: 30px; border-radius: 12px; border-top: 4px solid var(--navy);"><h3>02</h3><h4>Repair & Maintenance</h4><p>Complete restoration and preventive servicing for all boats.</p></div>
     <div style="background: #fff; padding: 30px; border-radius: 12px; border-top: 4px solid var(--navy);"><h3>03</h3><h4>Gelcoat Finishing</h4><p>Premium protective coating for long-lasting performance.</p></div>
+
+<div style="background: #fff; padding: 30px; border-radius: 12px; border-top: 4px solid var(--navy);"><h3>01</h3><h4>Fish Storage Tank</h4><p>Manufacturing and installation of durable fiberglass fish storage tanks designed for marine environments.</p></div>
+
+<div style="background: #fff; padding: 30px; border-radius: 12px; border-top: 4px solid var(--navy);"><h3>01</h3><h4>Reinforcement & Modification</h4><p>Structural strengthening, hull modifications, deck upgrades, and custom marine solutions.</p></div>
+
+<div style="background: #fff; padding: 30px; border-radius: 12px; border-top: 4px solid var(--navy);"><h3>01</h3><h4>Boat Ice Box & Cabin Fitting</h4><p>Custom ice box fabrication, cabin fitting, interior modifications, and utility installations.</p></div>
+
+<div style="background: #fff; padding: 30px; border-radius: 12px; border-top: 4px solid var(--navy);"><h3>01</h3><h4>Boat Ice Box & Cabin Making</h4><p>Custom ice box and cabin making.</p></div>
+
   </div>
 </section>
 
