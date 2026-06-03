@@ -873,6 +873,6 @@ href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 # Is code ki madad se aapka HTML pure webpage par automatic render (bann) jayega
 components.html(
     html_content,
-    height=1000,
+    height=5000,
     scrolling=False
 )
