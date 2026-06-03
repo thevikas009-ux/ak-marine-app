@@ -53,14 +53,13 @@ html_content = r"""
   /* HERO */
   .hero {
     min-height: 100vh;
-    background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 55%, var(--blue) 100%);
     display: flex;
     align-items: center;
-    padding: 20px 5vw 60px;
+    padding: 30px 5vw 60px;
     position: relative;
     overflow: hidden;
 }
-  .hero::before {
+.hero::before {
     content: '';
     position: absolute; bottom: -80px; left: -80px;
     width: 450px; height: 450px;
