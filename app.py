@@ -836,24 +836,7 @@ href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 </script>
 
 
-<!-- GALLERY -->
-<section id="gallery">
-  <div class="section-inner">
-    <p class="section-label">Our Portfolio</p>
-    <h2 class="section-title">Project Gallery</h2>
-    <p class="gallery-intro">Explore our latest fiberglass modifications, boat manufacturing, and heavy repair projects done right at the coast.</p>
-    
-    <!-- Dynamic Gallery Grid -->
-    <div class="gallery-grid" id="dynamic-gallery">
-      <!-- Admin jab photo upload karega tabhi yahan photos dikhengi -->
-    </div>
 
-    <!-- Load More Button (35+ Photos Handle karne k liye) -->
-    <div style="text-align: center; margin-top: 3rem;">
-      <button id="load-more-btn" class="hero-cta" style="background: transparent; cursor: pointer; display: none;">Load More Photos</button>
-    </div>
-  </div>
-</section>
 
 <!-- ADMIN UPLOAD SECTION (Hidden by default, active after password) -->
 <section id="admin-upload" style="display: none; background: var(--white); border-top: 2px solid var(--navy);">
