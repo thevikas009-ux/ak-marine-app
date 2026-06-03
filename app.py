@@ -51,39 +51,11 @@ html_content = r"""
   .nav-links a:hover { color: var(--sky-light); }
 
   /* HERO */
-  .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 70px 5vw 60px;
-    position: relative;
-    overflow: hidden;
-}
-.hero::before {
-    content: '';
-    position: absolute; bottom: -80px; left: -80px;
-    width: 450px; height: 450px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(91,164,207,0.12) 0%, transparent 70%);
-  }
-  .hero::after {
-    content: '';
-    position: absolute; top: -100px; right: -60px;
-    width: 450px; height: 450px;
-    border-radius: 50%;
-    border: 80px solid rgba(91,164,207,0.08);
-  }
-.hero-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    margin-top: 0;
-}
-.hero-tag { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--sky); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.75rem; }
+ .hero { min-height: 100vh; background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 55%, var(--blue) 100%); display: flex; align-items: center; padding: 80px 5vw 60px; position: relative; overflow: hidden; } 
+ .hero::before { content: ''; position: absolute; bottom: -80px; left: -80px; width: 450px; height: 450px; border-radius: 50%; background: radial-gradient(circle, rgba(91,164,207,0.12) 0%, transparent 70%); } 
+ .hero::after { content: ''; position: absolute; top: -100px; right: -60px; width: 450px; height: 450px; border-radius: 50%; border: 80px solid rgba(91,164,207,0.08); } 
+ .hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; } 
+ .hero-tag { font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--sky); margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.75rem; }
   .hero-tag::before { content: ''; display: inline-block; width: 2rem; height: 1px; background: var(--sky); }
   .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(3.5rem, 6vw, 5.5rem); font-weight: 600; line-height: 1.05; color: var(--white); margin-bottom: 1.5rem; }
   .hero h1 em { font-style: italic; color: var(--sky-light); }
