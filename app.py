@@ -289,25 +289,20 @@ html_content = r"""
     <p class="section-label">Connect with Us</p>
     <h2 class="section-title">Let's Discuss Your Vessel</h2>
     
-    <div class="contact-grid">
-      <div>
-        <div class="contact-info-row">
+    <div class="contact-info-row">
           <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
           <div><h4>Workshop Location</h4><p>Bhayandar West, Near Uttan Marine Area / Rai Village, Thane District, Maharashtra - 401101</p></div>
         </div>
+
         <div class="contact-info-row">
           <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
-          <div><h4>Call / WhatsApp</h4><p><a href="tel:+918655411098">+91 86554 11098</a></p></div>
+          <div><h4>Call / WhatsApp</h4><p><a href="tel:+918655411098" style="color: var(--blue); text-decoration: none;">+91 86554 11098</a></p></div>
         </div>
-        <div>
-    <h4>Call / E-mail</h4>
-    <p>
-      <a href="mailto:arun.mehra401105@gmail.com">
-        arun.mehra401105@gmail.com
-      </a>
-    </p>
-  </div>
-</div>
+
+        <div class="contact-info-row">
+          <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+          <div><h4>Email Address</h4><p><a href="mailto:arun.mehra401105@gmail.com" style="color: var(--blue); text-decoration: none;">arun.mehra401105@gmail.com</a></p></div>
+        </div>
         <div class="contact-note"><p><strong>Interactive Map Pointer:</strong> Click on the blue pins in the marine map to see coastal cities where AK Mehra successfully completed flagship projects!</p></div>
       </div>
 
