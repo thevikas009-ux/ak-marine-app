@@ -370,7 +370,7 @@ html_content = r"""
     </div>
     <div class="hero-photo-wrap">
       <div class="hero-photo-frame">
-        <img src="C:\Users\SigmaCapseal\Desktop\vikas\My Website\images/a.jpeg" style="width:450px;">
+        <img src="a.jpeg" style="width:450px;">
       </div>
       <div class="hero-photo-name">
         <p>A.K. Mehra</p>
