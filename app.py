@@ -607,3 +607,4 @@ document.querySelectorAll('.service-card').forEach(el => {
 </body>
 </html>
 """
+components.html(html_content, height=7000, scrolling=True)
